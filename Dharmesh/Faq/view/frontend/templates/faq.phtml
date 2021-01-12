@@ -1,0 +1,30 @@
+<?php
+$collection = $block->getCollection();
+?>
+<div id="faq-qa-wrapper">
+<?php if ($collection->count()): ?>
+	<h2 class="faq-title"><?php echo __('Got a question?'); ?></h2>
+	<div id="accordion" data-mage-init='{
+        "accordion":{
+            "active": false,
+            "collapsible": true,
+            "openedState": "active",
+            "multipleCollapsible": true,
+            "animate":{"duration":"400"}
+        }}'>
+        <?php foreach ($collection as $faq): ?>
+	        <div data-role="collapsible">
+		        <div data-role="trigger">
+		            <h4><?php echo $faq->getQuestion(); ?></h4>
+		        </div>
+		    </div>
+		    <div data-role="content" style="display:none;"><div class="content-inner"><?php echo $faq->getAnswer(); ?></div></div>
+        <?php endforeach; ?>
+	</div>
+<?php else: ?>
+    <div class="message">
+        <div><?php echo __('Have no FAQs.') ?></div>
+    </div>
+<?php endif; ?>
+
+</div>

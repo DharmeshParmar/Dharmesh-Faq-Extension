@@ -1,0 +1,32 @@
+#faq-qa-wrapper h2.faq-title {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px solid rgba(0,0,0,.1);
+    padding-top: 1rem;
+    padding: 1rem;
+    color: #333;
+}
+div#accordion {
+  padding: 0 1rem;
+  margin-bottom: 10%;
+}
+div#accordion h4 {
+    padding: 1rem;
+    border: 0;
+    border-top: 1px solid rgba(0,0,0,.1);
+    margin-bottom: 0;
+}
+div[data-role="trigger"] {cursor: pointer;width: 100%;}
+#accordion div[data-role="trigger"]::before {
+    content: '\f078';
+    font-weight: normal;
+    margin-top: 10px;
+    float: right;
+    margin-left: 5px;
+    font-family: fontawesome;
+    font-size: 22px;
+    color: #696969;
+}
+#accordion .allow.active div[data-role="trigger"]::before {content: "\f077";}
+#accordion div[data-role="content"] .content-inner {padding: 1rem;line-height: normal;color: #333;padding-left: 1.5rem;}

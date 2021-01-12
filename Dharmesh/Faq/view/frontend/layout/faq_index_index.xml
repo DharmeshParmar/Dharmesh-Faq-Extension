@@ -1,0 +1,16 @@
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="1column" xsi:noNamespaceSchemaLocation="../../../../../../../lib/internal/Magento/Framework/View/Layout/etc/page_configuration.xsd">
+
+	<head>
+        <title>FAQ</title>
+        <css src="Dharmesh_Faq::css/faqcss.css"/>        
+    </head>
+
+    <body>
+
+        <referenceContainer name="content">
+            <block class="Dharmesh\Faq\Block\Index\Index" name="faq_que" template="Dharmesh_Faq::faq.phtml"/>
+        </referenceContainer>
+
+
+    </body>
+</page>
