@@ -1,6 +1,7 @@
 Magento2 FAQ Module
 
-How to install ?
+How to install?
+
 $ php bin/magento module:enable Dharmesh_Faq
 
 $ php bin/magento setup:upgrade
